@@ -1,0 +1,41 @@
+version: '3.4'
+
+services:
+  dkh.dictionaries.api:
+    image: dkh.dictionaries.api
+    container_name: dkh-dictionaries-api
+    build:
+      context: .
+      dockerfile: DKH.Dictionaries.Api/Dockerfile
+    environment:
+      - ConnectionStrings__DictionaryDbContext=User ID=sa;Password=Passw0rd;Server=dkh.dictionaries.postgresql;Port=5432;Database=DictionaryDb;Integrated Security=true;
+    ports:
+      - "3010:5000"
+    depends_on:
+      - dkh.dictionaries.postgresql
+    links:
+      - dkh.dictionaries.postgresql
+    networks:
+      - dkh
+
+  dkh.dictionaries.postgresql:
+    image: postgres:latest
+    container_name: dkh-dictionaries-postgresql
+    environment:
+      - POSTGRES_USER=sa
+      - POSTGRES_PASSWORD=Passw0rd
+      - POSTGRES_DB=DictionaryDb
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    ports:
+      - "3011:5432"
+    restart: always
+    networks:
+      - dkh
+
+networks:
+  dkh:
+    driver: bridge
+
+volumes:
+  dkh.dictionaries.api:
+  dkh.dictionaries.postgresql:
