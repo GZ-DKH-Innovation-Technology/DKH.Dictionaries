@@ -17,9 +17,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{DAFAAB76-438D-4B1D-AAD8-355291049D43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DKH.Dictionaries.Infrastructure", "DKH.Dictionaries.Infrastructure\DKH.Dictionaries.Infrastructure.csproj", "{E9EFBB1C-0C63-45C1-9D04-72FC018FA304}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DKH.Dictionaries.Infrastructure", "DKH.Dictionaries.Infrastructure\DKH.Dictionaries.Infrastructure.csproj", "{E9EFBB1C-0C63-45C1-9D04-72FC018FA304}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DKH.Dictionaries.Application", "DKH.Dictionaries.Application\DKH.Dictionaries.Application.csproj", "{9D23F673-ECCB-4A09-AA2E-02CA0150B044}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DKH.Dictionaries.Application", "DKH.Dictionaries.Application\DKH.Dictionaries.Application.csproj", "{9D23F673-ECCB-4A09-AA2E-02CA0150B044}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{A44917A4-AB9E-432A-91B1-7F3549617DD6}"
 EndProject

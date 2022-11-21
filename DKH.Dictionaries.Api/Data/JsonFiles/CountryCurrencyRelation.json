@@ -1,0 +1,1252 @@
+﻿[
+  {
+    "Id": 0,
+    "CountryId": 1,
+    "CurrencyId": 1
+  },
+  {
+    "Id": 0,
+    "CountryId": 2,
+    "CurrencyId": 2
+  },
+  {
+    "Id": 0,
+    "CountryId": 3,
+    "CurrencyId": 3
+  },
+  {
+    "Id": 0,
+    "CountryId": 4,
+    "CurrencyId": 4
+  },
+  {
+    "Id": 0,
+    "CountryId": 5,
+    "CurrencyId": 5
+  },
+  {
+    "Id": 0,
+    "CountryId": 6,
+    "CurrencyId": 6
+  },
+  {
+    "Id": 0,
+    "CountryId": 7,
+    "CurrencyId": 7
+  },
+  {
+    "Id": 0,
+    "CountryId": 8,
+    "CurrencyId": 8
+  },
+  {
+    "Id": 0,
+    "CountryId": 9,
+    "CurrencyId": 9
+  },
+  {
+    "Id": 0,
+    "CountryId": 10,
+    "CurrencyId": 10
+  },
+  {
+    "Id": 0,
+    "CountryId": 11,
+    "CurrencyId": 11
+  },
+  {
+    "Id": 0,
+    "CountryId": 12,
+    "CurrencyId": 12
+  },
+  {
+    "Id": 0,
+    "CountryId": 13,
+    "CurrencyId": 13
+  },
+  {
+    "Id": 0,
+    "CountryId": 14,
+    "CurrencyId": 14
+  },
+  {
+    "Id": 0,
+    "CountryId": 15,
+    "CurrencyId": 15
+  },
+  {
+    "Id": 0,
+    "CountryId": 16,
+    "CurrencyId": 16
+  },
+  {
+    "Id": 0,
+    "CountryId": 18,
+    "CurrencyId": 17
+  },
+  {
+    "Id": 0,
+    "CountryId": 19,
+    "CurrencyId": 18
+  },
+  {
+    "Id": 0,
+    "CountryId": 20,
+    "CurrencyId": 19
+  },
+  {
+    "Id": 0,
+    "CountryId": 21,
+    "CurrencyId": 20
+  },
+  {
+    "Id": 0,
+    "CountryId": 22,
+    "CurrencyId": 21
+  },
+  {
+    "Id": 0,
+    "CountryId": 23,
+    "CurrencyId": 22
+  },
+  {
+    "Id": 0,
+    "CountryId": 24,
+    "CurrencyId": 23
+  },
+  {
+    "Id": 0,
+    "CountryId": 25,
+    "CurrencyId": 24
+  },
+  {
+    "Id": 0,
+    "CountryId": 26,
+    "CurrencyId": 25
+  },
+  {
+    "Id": 0,
+    "CountryId": 27,
+    "CurrencyId": 26
+  },
+  {
+    "Id": 0,
+    "CountryId": 155,
+    "CurrencyId": 27
+  },
+  {
+    "Id": 0,
+    "CountryId": 28,
+    "CurrencyId": 28
+  },
+  {
+    "Id": 0,
+    "CountryId": 29,
+    "CurrencyId": 29
+  },
+  {
+    "Id": 0,
+    "CountryId": 30,
+    "CurrencyId": 30
+  },
+  {
+    "Id": 0,
+    "CountryId": 31,
+    "CurrencyId": 31
+  },
+  {
+    "Id": 0,
+    "CountryId": 32,
+    "CurrencyId": 32
+  },
+  {
+    "Id": 0,
+    "CountryId": 33,
+    "CurrencyId": 33
+  },
+  {
+    "Id": 0,
+    "CountryId": 34,
+    "CurrencyId": 34
+  },
+  {
+    "Id": 0,
+    "CountryId": 35,
+    "CurrencyId": 35
+  },
+  {
+    "Id": 0,
+    "CountryId": 36,
+    "CurrencyId": 36
+  },
+  {
+    "Id": 0,
+    "CountryId": 37,
+    "CurrencyId": 37
+  },
+  {
+    "Id": 0,
+    "CountryId": 38,
+    "CurrencyId": 38
+  },
+  {
+    "Id": 0,
+    "CountryId": 39,
+    "CurrencyId": 39
+  },
+  {
+    "Id": 0,
+    "CountryId": 40,
+    "CurrencyId": 40
+  },
+  {
+    "Id": 0,
+    "CountryId": 41,
+    "CurrencyId": 41
+  },
+  {
+    "Id": 0,
+    "CountryId": 42,
+    "CurrencyId": 42
+  },
+  {
+    "Id": 0,
+    "CountryId": 43,
+    "CurrencyId": 43
+  },
+  {
+    "Id": 0,
+    "CountryId": 44,
+    "CurrencyId": 44
+  },
+  {
+    "Id": 0,
+    "CountryId": 45,
+    "CurrencyId": 45
+  },
+  {
+    "Id": 0,
+    "CountryId": 46,
+    "CurrencyId": 46
+  },
+  {
+    "Id": 0,
+    "CountryId": 47,
+    "CurrencyId": 47
+  },
+  {
+    "Id": 0,
+    "CountryId": 48,
+    "CurrencyId": 48
+  },
+  {
+    "Id": 0,
+    "CountryId": 49,
+    "CurrencyId": 49
+  },
+  {
+    "Id": 0,
+    "CountryId": 50,
+    "CurrencyId": 50
+  },
+  {
+    "Id": 0,
+    "CountryId": 52,
+    "CurrencyId": 51
+  },
+  {
+    "Id": 0,
+    "CountryId": 53,
+    "CurrencyId": 52
+  },
+  {
+    "Id": 0,
+    "CountryId": 54,
+    "CurrencyId": 53
+  },
+  {
+    "Id": 0,
+    "CountryId": 55,
+    "CurrencyId": 54
+  },
+  {
+    "Id": 0,
+    "CountryId": 56,
+    "CurrencyId": 55
+  },
+  {
+    "Id": 0,
+    "CountryId": 249,
+    "CurrencyId": 56
+  },
+  {
+    "Id": 0,
+    "CountryId": 57,
+    "CurrencyId": 57
+  },
+  {
+    "Id": 0,
+    "CountryId": 58,
+    "CurrencyId": 58
+  },
+  {
+    "Id": 0,
+    "CountryId": 51,
+    "CurrencyId": 59
+  },
+  {
+    "Id": 0,
+    "CountryId": 59,
+    "CurrencyId": 60
+  },
+  {
+    "Id": 0,
+    "CountryId": 60,
+    "CurrencyId": 61
+  },
+  {
+    "Id": 0,
+    "CountryId": 61,
+    "CurrencyId": 62
+  },
+  {
+    "Id": 0,
+    "CountryId": 62,
+    "CurrencyId": 63
+  },
+  {
+    "Id": 0,
+    "CountryId": 63,
+    "CurrencyId": 64
+  },
+  {
+    "Id": 0,
+    "CountryId": 64,
+    "CurrencyId": 65
+  },
+  {
+    "Id": 0,
+    "CountryId": 65,
+    "CurrencyId": 66
+  },
+  {
+    "Id": 0,
+    "CountryId": 66,
+    "CurrencyId": 67
+  },
+  {
+    "Id": 0,
+    "CountryId": 67,
+    "CurrencyId": 68
+  },
+  {
+    "Id": 0,
+    "CountryId": 68,
+    "CurrencyId": 69
+  },
+  {
+    "Id": 0,
+    "CountryId": 69,
+    "CurrencyId": 70
+  },
+  {
+    "Id": 0,
+    "CountryId": 70,
+    "CurrencyId": 71
+  },
+  {
+    "Id": 0,
+    "CountryId": 71,
+    "CurrencyId": 72
+  },
+  {
+    "Id": 0,
+    "CountryId": 72,
+    "CurrencyId": 73
+  },
+  {
+    "Id": 0,
+    "CountryId": 73,
+    "CurrencyId": 74
+  },
+  {
+    "Id": 0,
+    "CountryId": 74,
+    "CurrencyId": 75
+  },
+  {
+    "Id": 0,
+    "CountryId": 75,
+    "CurrencyId": 76
+  },
+  {
+    "Id": 0,
+    "CountryId": 76,
+    "CurrencyId": 77
+  },
+  {
+    "Id": 0,
+    "CountryId": 77,
+    "CurrencyId": 78
+  },
+  {
+    "Id": 0,
+    "CountryId": 78,
+    "CurrencyId": 79
+  },
+  {
+    "Id": 0,
+    "CountryId": 79,
+    "CurrencyId": 80
+  },
+  {
+    "Id": 0,
+    "CountryId": 80,
+    "CurrencyId": 81
+  },
+  {
+    "Id": 0,
+    "CountryId": 81,
+    "CurrencyId": 82
+  },
+  {
+    "Id": 0,
+    "CountryId": 82,
+    "CurrencyId": 83
+  },
+  {
+    "Id": 0,
+    "CountryId": 83,
+    "CurrencyId": 84
+  },
+  {
+    "Id": 0,
+    "CountryId": 84,
+    "CurrencyId": 85
+  },
+  {
+    "Id": 0,
+    "CountryId": 85,
+    "CurrencyId": 86
+  },
+  {
+    "Id": 0,
+    "CountryId": 86,
+    "CurrencyId": 87
+  },
+  {
+    "Id": 0,
+    "CountryId": 87,
+    "CurrencyId": 88
+  },
+  {
+    "Id": 0,
+    "CountryId": 88,
+    "CurrencyId": 89
+  },
+  {
+    "Id": 0,
+    "CountryId": 89,
+    "CurrencyId": 90
+  },
+  {
+    "Id": 0,
+    "CountryId": 90,
+    "CurrencyId": 91
+  },
+  {
+    "Id": 0,
+    "CountryId": 91,
+    "CurrencyId": 92
+  },
+  {
+    "Id": 0,
+    "CountryId": 92,
+    "CurrencyId": 93
+  },
+  {
+    "Id": 0,
+    "CountryId": 93,
+    "CurrencyId": 94
+  },
+  {
+    "Id": 0,
+    "CountryId": 94,
+    "CurrencyId": 95
+  },
+  {
+    "Id": 0,
+    "CountryId": 95,
+    "CurrencyId": 96
+  },
+  {
+    "Id": 0,
+    "CountryId": 96,
+    "CurrencyId": 97
+  },
+  {
+    "Id": 0,
+    "CountryId": 97,
+    "CurrencyId": 98
+  },
+  {
+    "Id": 0,
+    "CountryId": 98,
+    "CurrencyId": 99
+  },
+  {
+    "Id": 0,
+    "CountryId": 99,
+    "CurrencyId": 100
+  },
+  {
+    "Id": 0,
+    "CountryId": 100,
+    "CurrencyId": 101
+  },
+  {
+    "Id": 0,
+    "CountryId": 101,
+    "CurrencyId": 102
+  },
+  {
+    "Id": 0,
+    "CountryId": 102,
+    "CurrencyId": 103
+  },
+  {
+    "Id": 0,
+    "CountryId": 103,
+    "CurrencyId": 104
+  },
+  {
+    "Id": 0,
+    "CountryId": 104,
+    "CurrencyId": 105
+  },
+  {
+    "Id": 0,
+    "CountryId": 105,
+    "CurrencyId": 106
+  },
+  {
+    "Id": 0,
+    "CountryId": 106,
+    "CurrencyId": 107
+  },
+  {
+    "Id": 0,
+    "CountryId": 107,
+    "CurrencyId": 108
+  },
+  {
+    "Id": 0,
+    "CountryId": 108,
+    "CurrencyId": 109
+  },
+  {
+    "Id": 0,
+    "CountryId": 109,
+    "CurrencyId": 110
+  },
+  {
+    "Id": 0,
+    "CountryId": 110,
+    "CurrencyId": 111
+  },
+  {
+    "Id": 0,
+    "CountryId": 111,
+    "CurrencyId": 112
+  },
+  {
+    "Id": 0,
+    "CountryId": 112,
+    "CurrencyId": 113
+  },
+  {
+    "Id": 0,
+    "CountryId": 113,
+    "CurrencyId": 114
+  },
+  {
+    "Id": 0,
+    "CountryId": 114,
+    "CurrencyId": 115
+  },
+  {
+    "Id": 0,
+    "CountryId": 248,
+    "CurrencyId": 116
+  },
+  {
+    "Id": 0,
+    "CountryId": 117,
+    "CurrencyId": 117
+  },
+  {
+    "Id": 0,
+    "CountryId": 118,
+    "CurrencyId": 118
+  },
+  {
+    "Id": 0,
+    "CountryId": 119,
+    "CurrencyId": 119
+  },
+  {
+    "Id": 0,
+    "CountryId": 120,
+    "CurrencyId": 120
+  },
+  {
+    "Id": 0,
+    "CountryId": 121,
+    "CurrencyId": 121
+  },
+  {
+    "Id": 0,
+    "CountryId": 122,
+    "CurrencyId": 122
+  },
+  {
+    "Id": 0,
+    "CountryId": 123,
+    "CurrencyId": 123
+  },
+  {
+    "Id": 0,
+    "CountryId": 124,
+    "CurrencyId": 124
+  },
+  {
+    "Id": 0,
+    "CountryId": 125,
+    "CurrencyId": 125
+  },
+  {
+    "Id": 0,
+    "CountryId": 126,
+    "CurrencyId": 126
+  },
+  {
+    "Id": 0,
+    "CountryId": 127,
+    "CurrencyId": 127
+  },
+  {
+    "Id": 0,
+    "CountryId": 128,
+    "CurrencyId": 128
+  },
+  {
+    "Id": 0,
+    "CountryId": 129,
+    "CurrencyId": 129
+  },
+  {
+    "Id": 0,
+    "CountryId": 130,
+    "CurrencyId": 130
+  },
+  {
+    "Id": 0,
+    "CountryId": 131,
+    "CurrencyId": 131
+  },
+  {
+    "Id": 0,
+    "CountryId": 132,
+    "CurrencyId": 132
+  },
+  {
+    "Id": 0,
+    "CountryId": 133,
+    "CurrencyId": 133
+  },
+  {
+    "Id": 0,
+    "CountryId": 134,
+    "CurrencyId": 134
+  },
+  {
+    "Id": 0,
+    "CountryId": 135,
+    "CurrencyId": 135
+  },
+  {
+    "Id": 0,
+    "CountryId": 136,
+    "CurrencyId": 136
+  },
+  {
+    "Id": 0,
+    "CountryId": 137,
+    "CurrencyId": 137
+  },
+  {
+    "Id": 0,
+    "CountryId": 138,
+    "CurrencyId": 138
+  },
+  {
+    "Id": 0,
+    "CountryId": 139,
+    "CurrencyId": 139
+  },
+  {
+    "Id": 0,
+    "CountryId": 140,
+    "CurrencyId": 140
+  },
+  {
+    "Id": 0,
+    "CountryId": 141,
+    "CurrencyId": 141
+  },
+  {
+    "Id": 0,
+    "CountryId": 142,
+    "CurrencyId": 142
+  },
+  {
+    "Id": 0,
+    "CountryId": 143,
+    "CurrencyId": 143
+  },
+  {
+    "Id": 0,
+    "CountryId": 144,
+    "CurrencyId": 144
+  },
+  {
+    "Id": 0,
+    "CountryId": 145,
+    "CurrencyId": 145
+  },
+  {
+    "Id": 0,
+    "CountryId": 146,
+    "CurrencyId": 146
+  },
+  {
+    "Id": 0,
+    "CountryId": 147,
+    "CurrencyId": 147
+  },
+  {
+    "Id": 0,
+    "CountryId": 148,
+    "CurrencyId": 148
+  },
+  {
+    "Id": 0,
+    "CountryId": 149,
+    "CurrencyId": 149
+  },
+  {
+    "Id": 0,
+    "CountryId": 150,
+    "CurrencyId": 150
+  },
+  {
+    "Id": 0,
+    "CountryId": 151,
+    "CurrencyId": 151
+  },
+  {
+    "Id": 0,
+    "CountryId": 152,
+    "CurrencyId": 152
+  },
+  {
+    "Id": 0,
+    "CountryId": 153,
+    "CurrencyId": 153
+  },
+  {
+    "Id": 0,
+    "CountryId": 154,
+    "CurrencyId": 154
+  },
+  {
+    "Id": 0,
+    "CountryId": 156,
+    "CurrencyId": 155
+  },
+  {
+    "Id": 0,
+    "CountryId": 157,
+    "CurrencyId": 156
+  },
+  {
+    "Id": 0,
+    "CountryId": 158,
+    "CurrencyId": 157
+  },
+  {
+    "Id": 0,
+    "CountryId": 159,
+    "CurrencyId": 158
+  },
+  {
+    "Id": 0,
+    "CountryId": 160,
+    "CurrencyId": 159
+  },
+  {
+    "Id": 0,
+    "CountryId": 161,
+    "CurrencyId": 160
+  },
+  {
+    "Id": 0,
+    "CountryId": 162,
+    "CurrencyId": 161
+  },
+  {
+    "Id": 0,
+    "CountryId": 163,
+    "CurrencyId": 162
+  },
+  {
+    "Id": 0,
+    "CountryId": 115,
+    "CurrencyId": 163
+  },
+  {
+    "Id": 0,
+    "CountryId": 164,
+    "CurrencyId": 164
+  },
+  {
+    "Id": 0,
+    "CountryId": 165,
+    "CurrencyId": 165
+  },
+  {
+    "Id": 0,
+    "CountryId": 166,
+    "CurrencyId": 166
+  },
+  {
+    "Id": 0,
+    "CountryId": 167,
+    "CurrencyId": 167
+  },
+  {
+    "Id": 0,
+    "CountryId": 168,
+    "CurrencyId": 168
+  },
+  {
+    "Id": 0,
+    "CountryId": 169,
+    "CurrencyId": 169
+  },
+  {
+    "Id": 0,
+    "CountryId": 170,
+    "CurrencyId": 170
+  },
+  {
+    "Id": 0,
+    "CountryId": 171,
+    "CurrencyId": 171
+  },
+  {
+    "Id": 0,
+    "CountryId": 172,
+    "CurrencyId": 172
+  },
+  {
+    "Id": 0,
+    "CountryId": 173,
+    "CurrencyId": 173
+  },
+  {
+    "Id": 0,
+    "CountryId": 174,
+    "CurrencyId": 174
+  },
+  {
+    "Id": 0,
+    "CountryId": 175,
+    "CurrencyId": 175
+  },
+  {
+    "Id": 0,
+    "CountryId": 176,
+    "CurrencyId": 176
+  },
+  {
+    "Id": 0,
+    "CountryId": 177,
+    "CurrencyId": 177
+  },
+  {
+    "Id": 0,
+    "CountryId": 178,
+    "CurrencyId": 178
+  },
+  {
+    "Id": 0,
+    "CountryId": 179,
+    "CurrencyId": 179
+  },
+  {
+    "Id": 0,
+    "CountryId": 180,
+    "CurrencyId": 180
+  },
+  {
+    "Id": 0,
+    "CountryId": 181,
+    "CurrencyId": 181
+  },
+  {
+    "Id": 0,
+    "CountryId": 182,
+    "CurrencyId": 182
+  },
+  {
+    "Id": 0,
+    "CountryId": 183,
+    "CurrencyId": 183
+  },
+  {
+    "Id": 0,
+    "CountryId": 184,
+    "CurrencyId": 184
+  },
+  {
+    "Id": 0,
+    "CountryId": 185,
+    "CurrencyId": 185
+  },
+  {
+    "Id": 0,
+    "CountryId": 186,
+    "CurrencyId": 186
+  },
+  {
+    "Id": 0,
+    "CountryId": 187,
+    "CurrencyId": 187
+  },
+  {
+    "Id": 0,
+    "CountryId": 188,
+    "CurrencyId": 188
+  },
+  {
+    "Id": 0,
+    "CountryId": 189,
+    "CurrencyId": 189
+  },
+  {
+    "Id": 0,
+    "CountryId": 190,
+    "CurrencyId": 190
+  },
+  {
+    "Id": 0,
+    "CountryId": 191,
+    "CurrencyId": 191
+  },
+  {
+    "Id": 0,
+    "CountryId": 192,
+    "CurrencyId": 192
+  },
+  {
+    "Id": 0,
+    "CountryId": 193,
+    "CurrencyId": 193
+  },
+  {
+    "Id": 0,
+    "CountryId": 194,
+    "CurrencyId": 194
+  },
+  {
+    "Id": 0,
+    "CountryId": 195,
+    "CurrencyId": 195
+  },
+  {
+    "Id": 0,
+    "CountryId": 196,
+    "CurrencyId": 196
+  },
+  {
+    "Id": 0,
+    "CountryId": 197,
+    "CurrencyId": 197
+  },
+  {
+    "Id": 0,
+    "CountryId": 198,
+    "CurrencyId": 198
+  },
+  {
+    "Id": 0,
+    "CountryId": 199,
+    "CurrencyId": 199
+  },
+  {
+    "Id": 0,
+    "CountryId": 250,
+    "CurrencyId": 200
+  },
+  {
+    "Id": 0,
+    "CountryId": 200,
+    "CurrencyId": 201
+  },
+  {
+    "Id": 0,
+    "CountryId": 201,
+    "CurrencyId": 202
+  },
+  {
+    "Id": 0,
+    "CountryId": 202,
+    "CurrencyId": 203
+  },
+  {
+    "Id": 0,
+    "CountryId": 203,
+    "CurrencyId": 204
+  },
+  {
+    "Id": 0,
+    "CountryId": 204,
+    "CurrencyId": 205
+  },
+  {
+    "Id": 0,
+    "CountryId": 205,
+    "CurrencyId": 206
+  },
+  {
+    "Id": 0,
+    "CountryId": 116,
+    "CurrencyId": 207
+  },
+  {
+    "Id": 0,
+    "CountryId": 206,
+    "CurrencyId": 208
+  },
+  {
+    "Id": 0,
+    "CountryId": 207,
+    "CurrencyId": 209
+  },
+  {
+    "Id": 0,
+    "CountryId": 208,
+    "CurrencyId": 210
+  },
+  {
+    "Id": 0,
+    "CountryId": 209,
+    "CurrencyId": 211
+  },
+  {
+    "Id": 0,
+    "CountryId": 210,
+    "CurrencyId": 212
+  },
+  {
+    "Id": 0,
+    "CountryId": 211,
+    "CurrencyId": 213
+  },
+  {
+    "Id": 0,
+    "CountryId": 212,
+    "CurrencyId": 214
+  },
+  {
+    "Id": 0,
+    "CountryId": 213,
+    "CurrencyId": 215
+  },
+  {
+    "Id": 0,
+    "CountryId": 214,
+    "CurrencyId": 216
+  },
+  {
+    "Id": 0,
+    "CountryId": 215,
+    "CurrencyId": 217
+  },
+  {
+    "Id": 0,
+    "CountryId": 216,
+    "CurrencyId": 218
+  },
+  {
+    "Id": 0,
+    "CountryId": 217,
+    "CurrencyId": 219
+  },
+  {
+    "Id": 0,
+    "CountryId": 218,
+    "CurrencyId": 220
+  },
+  {
+    "Id": 0,
+    "CountryId": 219,
+    "CurrencyId": 221
+  },
+  {
+    "Id": 0,
+    "CountryId": 17,
+    "CurrencyId": 222
+  },
+  {
+    "Id": 0,
+    "CountryId": 220,
+    "CurrencyId": 223
+  },
+  {
+    "Id": 0,
+    "CountryId": 221,
+    "CurrencyId": 224
+  },
+  {
+    "Id": 0,
+    "CountryId": 222,
+    "CurrencyId": 225
+  },
+  {
+    "Id": 0,
+    "CountryId": 223,
+    "CurrencyId": 226
+  },
+  {
+    "Id": 0,
+    "CountryId": 224,
+    "CurrencyId": 227
+  },
+  {
+    "Id": 0,
+    "CountryId": 225,
+    "CurrencyId": 228
+  },
+  {
+    "Id": 0,
+    "CountryId": 226,
+    "CurrencyId": 229
+  },
+  {
+    "Id": 0,
+    "CountryId": 227,
+    "CurrencyId": 230
+  },
+  {
+    "Id": 0,
+    "CountryId": 228,
+    "CurrencyId": 231
+  },
+  {
+    "Id": 0,
+    "CountryId": 229,
+    "CurrencyId": 232
+  },
+  {
+    "Id": 0,
+    "CountryId": 230,
+    "CurrencyId": 233
+  },
+  {
+    "Id": 0,
+    "CountryId": 231,
+    "CurrencyId": 234
+  },
+  {
+    "Id": 0,
+    "CountryId": 232,
+    "CurrencyId": 235
+  },
+  {
+    "Id": 0,
+    "CountryId": 233,
+    "CurrencyId": 236
+  },
+  {
+    "Id": 0,
+    "CountryId": 234,
+    "CurrencyId": 237
+  },
+  {
+    "Id": 0,
+    "CountryId": 235,
+    "CurrencyId": 238
+  },
+  {
+    "Id": 0,
+    "CountryId": 236,
+    "CurrencyId": 239
+  },
+  {
+    "Id": 0,
+    "CountryId": 237,
+    "CurrencyId": 240
+  },
+  {
+    "Id": 0,
+    "CountryId": 238,
+    "CurrencyId": 241
+  },
+  {
+    "Id": 0,
+    "CountryId": 239,
+    "CurrencyId": 242
+  },
+  {
+    "Id": 0,
+    "CountryId": 240,
+    "CurrencyId": 243
+  },
+  {
+    "Id": 0,
+    "CountryId": 241,
+    "CurrencyId": 244
+  },
+  {
+    "Id": 0,
+    "CountryId": 242,
+    "CurrencyId": 245
+  },
+  {
+    "Id": 0,
+    "CountryId": 243,
+    "CurrencyId": 246
+  },
+  {
+    "Id": 0,
+    "CountryId": 244,
+    "CurrencyId": 247
+  },
+  {
+    "Id": 0,
+    "CountryId": 245,
+    "CurrencyId": 248
+  },
+  {
+    "Id": 0,
+    "CountryId": 246,
+    "CurrencyId": 249
+  },
+  {
+    "Id": 0,
+    "CountryId": 247,
+    "CurrencyId": 250
+  }
+]
