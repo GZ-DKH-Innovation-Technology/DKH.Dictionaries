@@ -20,7 +20,7 @@ public sealed class GetCountryTranslationsQuerySpec : Specification<CountryTrans
 
         Query
             .AsNoTracking()
-            .Where(entity => entity.Language.CultureName == CultureInfo.CurrentCulture.Name)
+            .Where(entity => entity.LanguageCode == CultureInfo.CurrentCulture.Name)
             .Skip(request.SkipCount)
             .Take(request.MaxResultCount);
     }

@@ -2,5 +2,7 @@
 
 public enum OverPassElementTypeEnum
 {
-    
+    NODE,
+    WAY,
+    RELATION
 }

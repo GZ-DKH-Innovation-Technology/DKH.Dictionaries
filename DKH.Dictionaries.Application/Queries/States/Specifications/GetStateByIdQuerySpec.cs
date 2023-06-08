@@ -5,7 +5,7 @@ namespace DKH.Dictionaries.Application.Queries.States.Specifications;
 
 public sealed class GetStateByIdQuerySpec : Specification<StateEntity>, ISingleResultSpecification
 {
-    public GetStateByIdQuerySpec(int id)
+    public GetStateByIdQuerySpec(string id)
     {
         Query
             .AsNoTracking()

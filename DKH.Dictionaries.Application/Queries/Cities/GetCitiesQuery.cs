@@ -2,7 +2,7 @@
 using AutoMapper;
 using DKH.Dictionaries.Application.Dto.Cities;
 using DKH.Dictionaries.Application.Queries.Cities.Specifications;
-using DKH.Dictionaries.Infrastructure.Data;
+using DKH.Dictionaries.Infrastructure.Persistence;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Volo.Abp.Application.Dtos;

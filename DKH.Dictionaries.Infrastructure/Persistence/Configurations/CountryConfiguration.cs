@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace DKH.Dictionaries.Infrastructure.Data.Configurations;
+namespace DKH.Dictionaries.Infrastructure.Persistence.Configurations;
 
-public class CountryConfiguration : BaseIdConfiguration<CountryEntity, int>
+public class CountryConfiguration : BaseIdConfiguration<CountryEntity, string>
 {
     public override void Configure(EntityTypeBuilder<CountryEntity> builder)
     {
@@ -27,17 +27,7 @@ public class CountryConfiguration : BaseIdConfiguration<CountryEntity, int>
             .HasConversion(new EnumToStringConverter<CountryThreeLetterCodeEnum>());
 
         builder.Property(entity => entity.NumericCode);
-
-        builder.Property(entity => entity.PhoneCode).HasMaxLength(20);
-
-        builder.Property(entity => entity.Capital).HasMaxLength(20);
-
-        builder.Property(entity => entity.Tld).HasMaxLength(10);
-
-        builder.Property(entity => entity.Region).HasMaxLength(20);
-
-        builder.Property(entity => entity.Subregion).HasMaxLength(50);
-
+        
         base.Configure(builder);
     }
 }

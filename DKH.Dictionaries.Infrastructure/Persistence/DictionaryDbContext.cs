@@ -3,7 +3,7 @@ using DKH.Dictionaries.Domain.Entities;
 using DKH.Dictionaries.Domain.Entities.Relationships;
 using Microsoft.EntityFrameworkCore;
 
-namespace DKH.Dictionaries.Infrastructure.Data;
+namespace DKH.Dictionaries.Infrastructure.Persistence;
 
 public class DictionaryDbContext : DbContext
 {

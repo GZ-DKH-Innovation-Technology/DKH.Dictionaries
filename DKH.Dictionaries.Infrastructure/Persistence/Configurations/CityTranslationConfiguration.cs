@@ -2,9 +2,9 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace DKH.Dictionaries.Infrastructure.Data.Configurations;
+namespace DKH.Dictionaries.Infrastructure.Persistence.Configurations;
 
-public class CityTranslationConfiguration : BaseIdConfiguration<CityTranslationEntity, int>
+public class CityTranslationConfiguration : BaseIdConfiguration<CityTranslationEntity, string>
 {
     public override void Configure(EntityTypeBuilder<CityTranslationEntity> builder)
     {

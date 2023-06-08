@@ -25,10 +25,10 @@ public class StatesController : BaseApiController
         return Ok(await Mediator.Send(request, cancellationToken));
     }
 
-    [HttpGet("int:id")]
+    [HttpGet(nameof(GetById))]
     [Consumes(MediaTypeNames.Application.Json)]
     [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(GetState))]
-    public async Task<IActionResult> Get(int id, CancellationToken cancellationToken)
+    public async Task<IActionResult> GetById([FromQuery] string id, CancellationToken cancellationToken)
     {
         return Ok(await Mediator.Send(new GetStateByIdQuery(id), cancellationToken));
     }

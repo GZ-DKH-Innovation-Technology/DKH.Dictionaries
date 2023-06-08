@@ -2,9 +2,9 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace DKH.Dictionaries.Infrastructure.Data.Configurations;
+namespace DKH.Dictionaries.Infrastructure.Persistence.Configurations;
 
-public class CountryTranslationConfiguration : BaseIdConfiguration<CountryTranslationEntity, int>
+public class CountryTranslationConfiguration : BaseIdConfiguration<CountryTranslationEntity, string>
 {
     public override void Configure(EntityTypeBuilder<CountryTranslationEntity> builder)
     {
@@ -14,10 +14,7 @@ public class CountryTranslationConfiguration : BaseIdConfiguration<CountryTransl
 
         builder.HasOne(x => x.Country).WithMany(x => x.Translations)
             .HasForeignKey(x => x.CountryId).IsRequired().OnDelete(DeleteBehavior.Restrict);
-
-        builder.HasOne(x => x.Language).WithMany()
-            .HasForeignKey(x => x.LanguageId).IsRequired().OnDelete(DeleteBehavior.Restrict);
-
+        
         base.Configure(builder);
     }
 }

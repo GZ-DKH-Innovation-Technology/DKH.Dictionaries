@@ -4,7 +4,7 @@ using Volo.Abp.Domain.Entities.Auditing;
 namespace DKH.Dictionaries.Domain.Entities;
 
 [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Local")]
-public sealed class CountryTranslationEntity : AuditedEntity<int>
+public class CountryTranslationEntity : AuditedEntity<string>
 {
     /// <summary>
     ///     Constructor for EF
@@ -13,11 +13,11 @@ public sealed class CountryTranslationEntity : AuditedEntity<int>
     {
     }
 
-    public CountryTranslationEntity(int id, string name, int countryId, int languageId) : base(id)
+    public CountryTranslationEntity(string id, string name, string countryId, string languageCode) : base(id)
     {
         Name = name;
         CountryId = countryId;
-        LanguageId = languageId;
+        LanguageCode = languageCode;
 
         CreationTime = DateTime.UtcNow;
     }
@@ -26,6 +26,11 @@ public sealed class CountryTranslationEntity : AuditedEntity<int>
     ///     Name
     /// </summary>
     public string Name { get; private set; } = default!;
+    
+    /// <summary>
+    ///     Language Code
+    /// </summary>
+    public string LanguageCode { get; private set; } = string.Empty;
 
     public CountryTranslationEntity AddCountry(CountryEntity country)
     {
@@ -35,23 +40,9 @@ public sealed class CountryTranslationEntity : AuditedEntity<int>
         return this;
     }
 
-    public CountryTranslationEntity AddCountryId(int countryId)
+    public CountryTranslationEntity AddCountryId(string countryId)
     {
         CountryId = countryId;
-        return this;
-    }
-
-    public CountryTranslationEntity AddLanguage(LanguageEntity language)
-    {
-        Language = language;
-        LanguageId = language.Id;
-
-        return this;
-    }
-
-    public CountryTranslationEntity AddLanguageId(int languageId)
-    {
-        LanguageId = languageId;
         return this;
     }
 
@@ -60,22 +51,12 @@ public sealed class CountryTranslationEntity : AuditedEntity<int>
     /// <summary>
     ///     Country Id
     /// </summary>
-    public int CountryId { get; private set; }
+    public string CountryId { get; private set; } = string.Empty;
 
     /// <summary>
     ///     Country
     /// </summary>
     public CountryEntity Country { get; private set; } = default!;
-
-    /// <summary>
-    ///     Language Id
-    /// </summary>
-    public int LanguageId { get; private set; }
-
-    /// <summary>
-    ///     Language
-    /// </summary>
-    public LanguageEntity Language { get; private set; } = default!;
-
+    
     #endregion
 }

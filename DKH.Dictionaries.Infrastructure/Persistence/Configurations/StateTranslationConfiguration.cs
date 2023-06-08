@@ -2,9 +2,9 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace DKH.Dictionaries.Infrastructure.Data.Configurations;
+namespace DKH.Dictionaries.Infrastructure.Persistence.Configurations;
 
-public class StateTranslationConfiguration : BaseIdConfiguration<StateTranslationEntity, int>
+public class StateTranslationConfiguration : BaseIdConfiguration<StateTranslationEntity, string>
 {
     public override void Configure(EntityTypeBuilder<StateTranslationEntity> builder)
     {

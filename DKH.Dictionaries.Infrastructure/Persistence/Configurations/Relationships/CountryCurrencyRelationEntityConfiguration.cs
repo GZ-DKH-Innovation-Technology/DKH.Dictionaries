@@ -2,9 +2,9 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace DKH.Dictionaries.Infrastructure.Data.Configurations.Relationships;
+namespace DKH.Dictionaries.Infrastructure.Persistence.Configurations.Relationships;
 
-public class CountryCurrencyRelationEntityConfiguration : BaseIdConfiguration<CountryCurrencyRelationEntity, int>
+public class CountryCurrencyRelationEntityConfiguration : BaseIdConfiguration<CountryCurrencyRelationEntity, string>
 {
     public override void Configure(EntityTypeBuilder<CountryCurrencyRelationEntity> builder)
     {

@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Volo.Abp.Domain.Entities;
 
-namespace DKH.Dictionaries.Infrastructure.Data.Configurations;
+namespace DKH.Dictionaries.Infrastructure.Persistence.Configurations;
 
 public abstract class BaseIdConfiguration<TEntity, TPrimaryKey> : IEntityTypeConfiguration<TEntity>
     where TEntity : Entity<TPrimaryKey>

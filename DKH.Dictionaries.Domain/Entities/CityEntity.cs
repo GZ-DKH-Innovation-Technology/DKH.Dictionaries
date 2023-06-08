@@ -4,7 +4,7 @@ using Volo.Abp.Domain.Entities.Auditing;
 namespace DKH.Dictionaries.Domain.Entities;
 
 [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Local")]
-public sealed class CityEntity : AuditedEntity<int>
+public class CityEntity : AuditedEntity<string>
 {
     private readonly List<CityTranslationEntity> _translations = new();
 
@@ -15,7 +15,7 @@ public sealed class CityEntity : AuditedEntity<int>
     {
     }
 
-    public CityEntity(int id, string name, int countryId, int stateId) : base(id)
+    public CityEntity(string id, string name, string countryId, string stateId) : base(id)
     {
         Name = name;
         CountryId = countryId;
@@ -44,7 +44,7 @@ public sealed class CityEntity : AuditedEntity<int>
     /// <summary>
     ///     Country Id
     /// </summary>
-    public int CountryId { get; private set; }
+    public string CountryId { get; private set; }
 
     /// <summary>
     ///     Country
@@ -54,7 +54,7 @@ public sealed class CityEntity : AuditedEntity<int>
     /// <summary>
     ///     Country Id
     /// </summary>
-    public int StateId { get; private set; }
+    public string StateId { get; private set; }
 
     /// <summary>
     ///     Country

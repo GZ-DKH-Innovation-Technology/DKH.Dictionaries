@@ -1,0 +1,2 @@
+Add-Migration Initial -Context DKH.Dictionaries.Infrastructure.Persistence.DictionaryDbContext -Verbose -OutputDir Persistence\Migrations
+-Project DKH.Dictionaries.Infrastructure -StartupProject DKH.Dictionaries.Api -Debug

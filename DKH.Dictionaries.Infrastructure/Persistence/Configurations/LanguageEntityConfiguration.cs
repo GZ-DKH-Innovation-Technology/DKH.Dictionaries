@@ -2,9 +2,9 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace DKH.Dictionaries.Infrastructure.Data.Configurations;
+namespace DKH.Dictionaries.Infrastructure.Persistence.Configurations;
 
-public class LanguageEntityConfiguration : BaseIdConfiguration<LanguageEntity, int>
+public class LanguageEntityConfiguration : BaseIdConfiguration<LanguageEntity, string>
 {
     public override void Configure(EntityTypeBuilder<LanguageEntity> builder)
     {

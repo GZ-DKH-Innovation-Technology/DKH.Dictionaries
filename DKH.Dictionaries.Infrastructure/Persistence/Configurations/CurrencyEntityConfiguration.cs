@@ -2,9 +2,9 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace DKH.Dictionaries.Infrastructure.Data.Configurations;
+namespace DKH.Dictionaries.Infrastructure.Persistence.Configurations;
 
-public class CurrencyEntityConfiguration : BaseIdConfiguration<CurrencyEntity, int>
+public class CurrencyEntityConfiguration : BaseIdConfiguration<CurrencyEntity, string>
 {
     public override void Configure(EntityTypeBuilder<CurrencyEntity> builder)
     {

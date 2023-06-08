@@ -2,7 +2,7 @@
 using AutoMapper;
 using DKH.Dictionaries.Application.Dto.States;
 using DKH.Dictionaries.Application.Queries.States.Specifications;
-using DKH.Dictionaries.Infrastructure.Data;
+using DKH.Dictionaries.Infrastructure.Persistence;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,12 +10,12 @@ namespace DKH.Dictionaries.Application.Queries.States;
 
 public class GetStateByIdQuery : IRequest<GetState>
 {
-    public GetStateByIdQuery(int id)
+    public GetStateByIdQuery(string id)
     {
         Id = id;
     }
 
-    public int Id { get; }
+    public string Id { get; }
 }
 
 public class GetStateByIdQueryHandler : IRequestHandler<GetStateByIdQuery, GetState>

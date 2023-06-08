@@ -10,7 +10,7 @@ namespace DKH.Dictionaries.Domain.Entities;
 ///     https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes
 /// </summary>
 [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Local")]
-public sealed class CountryEntity : AuditedEntity<int>
+public class CountryEntity : AuditedEntity<string>
 {
     private readonly List<CountryCurrencyRelationEntity> _currencies = new();
     private readonly List<CountryTranslationEntity> _translations = new();
@@ -23,28 +23,18 @@ public sealed class CountryEntity : AuditedEntity<int>
     }
 
     public CountryEntity(
-        int id,
+        string id,
         string name,
         string nativeName,
         CountryTwoLetterCodeEnum twoLetterCode,
         CountryThreeLetterCodeEnum threeLetterCode,
-        int numericCode,
-        string phoneCode,
-        string capital,
-        string tld,
-        string region,
-        string subregion) : base(id)
+        string numericCode) : base(id)
     {
         Name = name;
         NativeName = nativeName;
         TwoLetterCode = twoLetterCode;
         ThreeLetterCode = threeLetterCode;
         NumericCode = numericCode;
-        PhoneCode = phoneCode;
-        Capital = capital;
-        Tld = tld;
-        Region = region;
-        Subregion = subregion;
 
         CreationTime = DateTime.UtcNow;
 
@@ -75,45 +65,16 @@ public sealed class CountryEntity : AuditedEntity<int>
     /// <summary>
     ///     Numeric code (ISO 3166-1)
     /// </summary>
-    public int NumericCode { get; private set; }
-
-    /// <summary>
-    ///     Phone code
-    /// </summary>
-    public string PhoneCode { get; private set; } = default!;
-
-    /// <summary>
-    ///     Capital
-    /// </summary>
-    public string Capital { get; private set; } = default!;
-
-    /// <summary>
-    ///     Country code top-level domain
-    /// </summary>
-    public string Tld { get; private set; } = default!;
-
-    /// <summary>
-    ///     Region
-    /// </summary>
-    public string Region { get; private set; } = default!;
-
-    /// <summary>
-    ///     Subregion
-    /// </summary>
-    public string Subregion { get; private set; } = default!;
-
+    public string NumericCode { get; private set; } = string.Empty;
+    
+    
     public CountryEntity Update(
-        int id,
+        string id,
         string name,
         string nativeName,
         CountryTwoLetterCodeEnum twoLetterCode,
         CountryThreeLetterCodeEnum threeLetterCode,
-        int numericCode,
-        string phoneCode,
-        string capital,
-        string tld,
-        string region,
-        string subregion)
+        string numericCode)
     {
         Id = id;
         Name = name;
@@ -121,11 +82,6 @@ public sealed class CountryEntity : AuditedEntity<int>
         TwoLetterCode = twoLetterCode;
         ThreeLetterCode = threeLetterCode;
         NumericCode = numericCode;
-        PhoneCode = phoneCode;
-        Capital = capital;
-        Tld = tld;
-        Region = region;
-        Subregion = subregion;
 
         LastModificationTime = DateTime.UtcNow;
         return this;

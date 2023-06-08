@@ -2,7 +2,7 @@
 
 namespace DKH.Dictionaries.Application.Dto.Currencies;
 
-public class GetCurrency : EntityDto<int>
+public class GetCurrency : EntityDto<string>
 {
     /// <summary>
     ///     Name

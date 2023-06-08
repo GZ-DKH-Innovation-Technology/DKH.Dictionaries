@@ -1,10 +1,9 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
-using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace DKH.Dictionaries.Infrastructure.Migrations
+namespace DKH.Dictionaries.Infrastructure.Persistence.Migrations
 {
     /// <inheritdoc />
     public partial class Initial : Migration
@@ -20,18 +19,12 @@ namespace DKH.Dictionaries.Infrastructure.Migrations
                 schema: "Dictionary",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Id = table.Column<string>(type: "text", nullable: false),
                     Name = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
                     NativeName = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
                     TwoLetterCode = table.Column<string>(type: "character varying(2)", maxLength: 2, nullable: false),
                     ThreeLetterCode = table.Column<string>(type: "character varying(3)", maxLength: 3, nullable: false),
-                    NumericCode = table.Column<int>(type: "integer", nullable: false),
-                    PhoneCode = table.Column<string>(type: "character varying(20)", maxLength: 20, nullable: false),
-                    Capital = table.Column<string>(type: "character varying(20)", maxLength: 20, nullable: false),
-                    Tld = table.Column<string>(type: "character varying(10)", maxLength: 10, nullable: false),
-                    Region = table.Column<string>(type: "character varying(20)", maxLength: 20, nullable: false),
-                    Subregion = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
+                    NumericCode = table.Column<string>(type: "text", nullable: false),
                     CreationTime = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     CreatorId = table.Column<Guid>(type: "uuid", nullable: true),
                     LastModificationTime = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
@@ -47,8 +40,7 @@ namespace DKH.Dictionaries.Infrastructure.Migrations
                 schema: "Dictionary",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Id = table.Column<string>(type: "text", nullable: false),
                     Name = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
                     Code = table.Column<string>(type: "character varying(3)", maxLength: 3, nullable: false),
                     Symbol = table.Column<string>(type: "character varying(10)", maxLength: 10, nullable: false),
@@ -67,8 +59,7 @@ namespace DKH.Dictionaries.Infrastructure.Migrations
                 schema: "Dictionary",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Id = table.Column<string>(type: "text", nullable: false),
                     CultureName = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
                     NativeName = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
                     DisplayName = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
@@ -86,16 +77,41 @@ namespace DKH.Dictionaries.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "CountryTranslations",
+                schema: "Dictionary",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "text", nullable: false),
+                    Name = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
+                    LanguageCode = table.Column<string>(type: "text", nullable: false),
+                    CountryId = table.Column<string>(type: "text", nullable: false),
+                    CreationTime = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    CreatorId = table.Column<Guid>(type: "uuid", nullable: true),
+                    LastModificationTime = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
+                    LastModifierId = table.Column<Guid>(type: "uuid", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_CountryTranslations", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_CountryTranslations_Countries_CountryId",
+                        column: x => x.CountryId,
+                        principalSchema: "Dictionary",
+                        principalTable: "Countries",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "States",
                 schema: "Dictionary",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Id = table.Column<string>(type: "text", nullable: false),
                     Name = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
                     Code = table.Column<string>(type: "character varying(5)", maxLength: 5, nullable: false),
                     Type = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: true),
-                    CountryId = table.Column<int>(type: "integer", nullable: false),
+                    CountryId = table.Column<string>(type: "text", nullable: false),
                     CreationTime = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     CreatorId = table.Column<Guid>(type: "uuid", nullable: true),
                     LastModificationTime = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
@@ -118,10 +134,9 @@ namespace DKH.Dictionaries.Infrastructure.Migrations
                 schema: "Dictionary",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    CountryId = table.Column<int>(type: "integer", nullable: false),
-                    CurrencyId = table.Column<int>(type: "integer", nullable: false),
+                    Id = table.Column<string>(type: "text", nullable: false),
+                    CountryId = table.Column<string>(type: "text", nullable: false),
+                    CurrencyId = table.Column<string>(type: "text", nullable: true),
                     CreationTime = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     CreatorId = table.Column<Guid>(type: "uuid", nullable: true),
                     LastModificationTime = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
@@ -147,49 +162,14 @@ namespace DKH.Dictionaries.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "CountryTranslations",
-                schema: "Dictionary",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    Name = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
-                    CountryId = table.Column<int>(type: "integer", nullable: false),
-                    LanguageId = table.Column<int>(type: "integer", nullable: false),
-                    CreationTime = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    CreatorId = table.Column<Guid>(type: "uuid", nullable: true),
-                    LastModificationTime = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
-                    LastModifierId = table.Column<Guid>(type: "uuid", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_CountryTranslations", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_CountryTranslations_Countries_CountryId",
-                        column: x => x.CountryId,
-                        principalSchema: "Dictionary",
-                        principalTable: "Countries",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_CountryTranslations_Languages_LanguageId",
-                        column: x => x.LanguageId,
-                        principalSchema: "Dictionary",
-                        principalTable: "Languages",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Cities",
                 schema: "Dictionary",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Id = table.Column<string>(type: "text", nullable: false),
                     Name = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
-                    CountryId = table.Column<int>(type: "integer", nullable: false),
-                    StateId = table.Column<int>(type: "integer", nullable: false),
+                    CountryId = table.Column<string>(type: "text", nullable: false),
+                    StateId = table.Column<string>(type: "text", nullable: false),
                     CreationTime = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     CreatorId = table.Column<Guid>(type: "uuid", nullable: true),
                     LastModificationTime = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
@@ -219,11 +199,10 @@ namespace DKH.Dictionaries.Infrastructure.Migrations
                 schema: "Dictionary",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Id = table.Column<string>(type: "text", nullable: false),
                     Name = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
-                    StateId = table.Column<int>(type: "integer", nullable: false),
-                    LanguageId = table.Column<int>(type: "integer", nullable: false),
+                    StateId = table.Column<string>(type: "text", nullable: false),
+                    LanguageId = table.Column<string>(type: "text", nullable: false),
                     CreationTime = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     CreatorId = table.Column<Guid>(type: "uuid", nullable: true),
                     LastModificationTime = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
@@ -253,11 +232,10 @@ namespace DKH.Dictionaries.Infrastructure.Migrations
                 schema: "Dictionary",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Id = table.Column<string>(type: "text", nullable: false),
                     Name = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
-                    CityId = table.Column<int>(type: "integer", nullable: false),
-                    LanguageId = table.Column<int>(type: "integer", nullable: false),
+                    CityId = table.Column<string>(type: "text", nullable: false),
+                    LanguageId = table.Column<string>(type: "text", nullable: false),
                     CreationTime = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     CreatorId = table.Column<Guid>(type: "uuid", nullable: true),
                     LastModificationTime = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
@@ -317,12 +295,6 @@ namespace DKH.Dictionaries.Infrastructure.Migrations
                 schema: "Dictionary",
                 table: "CountryTranslations",
                 column: "CountryId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_CountryTranslations_LanguageId",
-                schema: "Dictionary",
-                table: "CountryTranslations",
-                column: "LanguageId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_States_CountryId",

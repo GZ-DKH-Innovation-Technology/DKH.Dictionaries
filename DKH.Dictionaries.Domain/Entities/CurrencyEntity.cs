@@ -9,7 +9,7 @@ namespace DKH.Dictionaries.Domain.Entities;
 ///     https://en.wikipedia.org/wiki/ISO_4217
 /// </summary>
 [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Local")]
-public sealed class CurrencyEntity : AuditedEntity<int>
+public class CurrencyEntity : AuditedEntity<string>
 {
     private readonly List<CountryCurrencyRelationEntity> _countries = new();
 
@@ -20,7 +20,7 @@ public sealed class CurrencyEntity : AuditedEntity<int>
     {
     }
 
-    public CurrencyEntity(int id, string name, string symbol, string code) : base(id)
+    public CurrencyEntity(string id, string name, string symbol, string code) : base(id)
     {
         Name = name;
         Code = code;

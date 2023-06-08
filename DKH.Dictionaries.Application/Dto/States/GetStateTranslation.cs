@@ -2,7 +2,7 @@
 
 namespace DKH.Dictionaries.Application.Dto.States;
 
-public class GetStateTranslation : EntityDto<int>
+public class GetStateTranslation : EntityDto<string>
 {
     /// <summary>
     ///     Name

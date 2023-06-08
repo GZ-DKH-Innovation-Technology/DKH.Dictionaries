@@ -5,7 +5,7 @@ using Volo.Abp.Domain.Entities.Auditing;
 namespace DKH.Dictionaries.Domain.Entities;
 
 [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Local")]
-public sealed class LanguageEntity : AuditedEntity<int>
+public class LanguageEntity : AuditedEntity<string>
 {
     #region Constructor
 
@@ -18,7 +18,7 @@ public sealed class LanguageEntity : AuditedEntity<int>
 
     #endregion
 
-    public LanguageEntity(int id, string cultureName) : base(id)
+    public LanguageEntity(string id, string cultureName) : base(id)
     {
         var culture = string.IsNullOrEmpty(cultureName)
             ? CultureInfo.InvariantCulture

@@ -1,2 +1,0 @@
-Add-Migration <NAME> -Context DKH.Dictionaries.Infrastructure.Data.DictionaryDbContext -Verbose -OutputDir Migrations
--Project DKH.Dictionaries.Infrastructure -StartupProject DKH.Dictionaries.Api -Debug

@@ -2,7 +2,7 @@
 using AutoMapper;
 using DKH.Dictionaries.Application.Dto.Languages;
 using DKH.Dictionaries.Application.Queries.Languages.Specifications;
-using DKH.Dictionaries.Infrastructure.Data;
+using DKH.Dictionaries.Infrastructure.Persistence;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,12 +10,12 @@ namespace DKH.Dictionaries.Application.Queries.Languages;
 
 public class GetLanguageByIdQuery : IRequest<GetLanguage>
 {
-    public GetLanguageByIdQuery(int id)
+    public GetLanguageByIdQuery(string id)
     {
         Id = id;
     }
 
-    public int Id { get; set; }
+    public string Id { get; set; }
 }
 
 public class GetLanguageByIdQueryHandler : IRequestHandler<GetLanguageByIdQuery, GetLanguage>

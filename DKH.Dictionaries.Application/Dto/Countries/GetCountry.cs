@@ -2,7 +2,7 @@
 
 namespace DKH.Dictionaries.Application.Dto.Countries;
 
-public class GetCountry : EntityDto<int>
+public class GetCountry : EntityDto<string>
 {
     /// <summary>
     ///     Name
@@ -28,29 +28,4 @@ public class GetCountry : EntityDto<int>
     ///     Numeric code
     /// </summary>
     public int NumericCode { get; set; }
-
-    /// <summary>
-    ///     Phone code
-    /// </summary>
-    public string PhoneCode { get; set; } = default!;
-
-    /// <summary>
-    ///     Capital
-    /// </summary>
-    public string Capital { get; set; } = default!;
-
-    /// <summary>
-    ///     Tld
-    /// </summary>
-    public string Tld { get; set; } = default!;
-
-    /// <summary>
-    ///     Region
-    /// </summary>
-    public string Region { get; set; } = default!;
-
-    /// <summary>
-    ///     Subregion
-    /// </summary>
-    public string Subregion { get; set; } = default!;
 }

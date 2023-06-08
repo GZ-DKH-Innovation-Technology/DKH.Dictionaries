@@ -5,7 +5,7 @@ namespace DKH.Dictionaries.Application.Queries.Languages.Specifications;
 
 public sealed class GetLanguageByIdQuerySpec : Specification<LanguageEntity>, ISingleResultSpecification
 {
-    public GetLanguageByIdQuerySpec(int id)
+    public GetLanguageByIdQuerySpec(string id)
     {
         Query
             .AsNoTracking()

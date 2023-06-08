@@ -1,6 +1,6 @@
 ﻿using DKH.Dictionaries.Domain.Entities.Relationships;
 using DKH.Dictionaries.Domain.Entities;
-using DKH.Dictionaries.Infrastructure.Data;
+using DKH.Dictionaries.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 
@@ -97,7 +97,7 @@ public static class DbInitializer
 
     private static List<LanguageEntity> Languages(IEnumerable<string> supportedCultures)
     {
-        return supportedCultures.Select(culture => new LanguageEntity(0, culture)).ToList();
+        return supportedCultures.Select(culture => new LanguageEntity(string.Empty, culture)).ToList();
     }
 
     #endregion

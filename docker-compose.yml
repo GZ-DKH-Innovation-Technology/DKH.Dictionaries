@@ -10,7 +10,8 @@ services:
     environment:
       - ConnectionStrings__DictionaryDbContext=User ID=sa;Password=Passw0rd;Server=dkh.dictionaries.postgresql;Port=5432;Database=DictionaryDb;Integrated Security=true;
     ports:
-      - "3010:5000"
+      - "3010:80"
+      - "3011:443"
     depends_on:
       - dkh.dictionaries.postgresql
     links:
@@ -27,7 +28,7 @@ services:
       - POSTGRES_DB=DictionaryDb
       - POSTGRES_HOST_AUTH_METHOD=trust
     ports:
-      - "3011:5432"
+      - "3012:5432"
     restart: always
     networks:
       - dkh

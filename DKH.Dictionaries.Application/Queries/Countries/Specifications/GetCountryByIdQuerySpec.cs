@@ -5,7 +5,7 @@ namespace DKH.Dictionaries.Application.Queries.Countries.Specifications;
 
 public sealed class GetCountryByIdQuerySpec : Specification<CountryEntity>, ISingleResultSpecification
 {
-    public GetCountryByIdQuerySpec(int id)
+    public GetCountryByIdQuerySpec(string id)
     {
         Query
             .AsNoTracking()

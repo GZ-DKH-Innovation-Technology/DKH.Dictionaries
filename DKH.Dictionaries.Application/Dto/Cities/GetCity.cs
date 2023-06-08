@@ -2,7 +2,7 @@
 
 namespace DKH.Dictionaries.Application.Dto.Cities;
 
-public class GetCity : EntityDto<int>
+public class GetCity : EntityDto<string>
 {
     /// <summary>
     ///     Name

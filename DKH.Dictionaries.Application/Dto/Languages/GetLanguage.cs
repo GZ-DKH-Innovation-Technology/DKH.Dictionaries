@@ -2,7 +2,7 @@
 
 namespace DKH.Dictionaries.Application.Dto.Languages;
 
-public class GetLanguage : EntityDto<int>
+public class GetLanguage : EntityDto<string>
 {
     /// <summary>
     ///     culture name format (e.g. en-US).

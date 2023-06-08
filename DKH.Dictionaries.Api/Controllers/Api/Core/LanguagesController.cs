@@ -16,10 +16,10 @@ public class LanguagesController : BaseApiController
         return Ok(await Mediator.Send(request, cancellationToken));
     }
 
-    [HttpGet("int:id")]
+    [HttpGet(nameof(GetById))]
     [Consumes(MediaTypeNames.Application.Json)]
     [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(GetLanguage))]
-    public async Task<IActionResult> Get(int id, CancellationToken cancellationToken)
+    public async Task<IActionResult> GetById([FromQuery] string id, CancellationToken cancellationToken)
     {
         return Ok(await Mediator.Send(new GetLanguageByIdQuery(id), cancellationToken));
     }

@@ -2,7 +2,7 @@
 using AutoMapper;
 using DKH.Dictionaries.Application.Dto.Countries;
 using DKH.Dictionaries.Application.Queries.Countries.Specifications;
-using DKH.Dictionaries.Infrastructure.Data;
+using DKH.Dictionaries.Infrastructure.Persistence;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,12 +10,12 @@ namespace DKH.Dictionaries.Application.Queries.Countries;
 
 public class GetCountryByIdQuery : IRequest<GetCountry>
 {
-    public GetCountryByIdQuery(int id)
+    public GetCountryByIdQuery(string id)
     {
         Id = id;
     }
 
-    public int Id { get; }
+    public string Id { get; }
 }
 
 public class GetCountryByIdQueryHandler : IRequestHandler<GetCountryByIdQuery, GetCountry>
