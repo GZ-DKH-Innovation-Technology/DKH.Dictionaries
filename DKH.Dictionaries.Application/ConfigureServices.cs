@@ -1,7 +1,6 @@
-﻿using System.Reflection;
-using FluentValidation;
-using MediatR;
+﻿using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
+using System.Reflection;
 
 namespace DKH.Dictionaries.Application;
 
@@ -14,6 +13,6 @@ public static class DependencyInjection
         return services
             .AddAutoMapper(assembly)
             .AddValidatorsFromAssembly(assembly)
-            .AddMediatR(assembly);
+            .AddMediatR(configuration => configuration.RegisterServicesFromAssembly(assembly));
     }
 }
